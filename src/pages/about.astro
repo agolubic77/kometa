@@ -1,0 +1,13 @@
+---
+import Hero1 from "../components/Hero1.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import oNama from "../images/pic_onama.jpg";
+---
+
+<Layout title="about us">
+  <Hero1 />
+  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+    <Image src={oNama} alt="o nama" />
+  </div>
+</Layout>
