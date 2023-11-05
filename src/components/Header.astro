@@ -196,6 +196,7 @@ import Navigation from "./Navigation.astro";
     const closeMenuButton = document.querySelector('[title="Close Menu"]');
     const mobileMenu = document.querySelector(".absolute.top-0.left-0.w-full");
 
+    if (!openMenuButton || !closeMenuButton || !mobileMenu) return;
     openMenuButton.addEventListener("click", () => {
       mobileMenu.classList.remove("hidden"); // Show the mobile menu
     });
